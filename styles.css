@@ -1,0 +1,3752 @@
+/* GENERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+}
+
+html{
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'depixelbreit';
+    src: url('depixelbreit-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'depixelbreitfeet';
+    src: url('depixelbreitfett.otf');
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('Gotham\ Medium.otf');
+    }
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('Gotham\ Book.ttf');
+}
+
+.section_container{
+    width: 100%;
+    position: relative;
+}
+
+.section_container--1 {
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* GENERAL EFFECTS */
+/* SLIDE LEFT EFFECT */
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+   
+.js-scroll.scrolled {
+    opacity: 1;
+}
+
+.scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+}
+   
+@keyframes fade-in {
+    0% {
+      opacity:0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.scrolled.slide-in-left {
+    animation: slide-in-left 1s ease-in-out both;
+}
+   
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-400px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+.demo {
+    animation: slide-in-left;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+.demo1 {
+    animation: slide-in-left;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+.demo2 {
+    animation: slide-in-left;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+}
+.demo3 {
+    animation: slide-in-left;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+}
+.demo4 {
+    animation: slide-in-left;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+}
+
+.scrolled.slide-out-left {
+    animation: slide-out-left 4s ease-out both;
+}
+   
+@keyframes slide-out-left {
+    0% {
+      transform: translateX(-600px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+
+.scrolled.cloudSlide {
+    animation: cloudSlide 4s ease-out both;
+}
+   
+@keyframes cloudSlide {
+    0% {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-100px);
+      opacity: 1;
+    }
+}
+
+.scrolled.slide-in-right {
+    animation: slide-in-right 1s ease-in-out both;
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+  }
+  
+  @keyframes fade-in-bottom {
+    0% {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.scrolled.fade-in-up {
+    animation: fade-in-up 1s ease-in-out both;
+  }
+  
+  @keyframes fade-in-up {
+    0% {
+      transform: translateY(0px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(50px);
+      opacity: 1;
+    }
+  }
+
+
+
+/* FIRST SECTION */
+.firstSection{
+    background-image: url("img/background/bg1.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    width: 500px;
+    max-width: 100%;
+    margin-top: 150px;
+}
+.scrollDown{
+    width: 200px;
+    max-width: 100%;
+    padding-bottom: 40px;
+}
+.arrow{
+    width: 30px;
+    max-width: 100%;
+    padding-bottom: 10px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.arrow1{
+    width: 30px;
+    max-width: 100%;
+    padding-bottom: 10px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.arrow2{
+    width: 30px;
+    max-width: 100%;
+    padding-bottom: 10px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.firstTitle{
+    font-size: 30px;
+    font-family: 'Gotham-Book';
+    color: white;
+    text-align: center;
+    margin-top: 300px;
+    padding-bottom: 10px;
+}
+
+
+/* SECOND SECTION */
+.secondSection{
+    background-image: url("img/background/bg2.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.secondTitle{
+    font-size: 70px;
+    font-family: 'Gotham-Book';
+    color: white;
+    text-align: center;
+    margin: 0px 380px 50px 380px;
+}
+.balloon{
+    width: 250px;
+    max-width: 100%;
+}
+.balloon1{
+    width: 300px;
+    max-width: 100%;
+    padding-left: 50px;
+    left: 0%;
+    top: 40%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.lookBack{
+    width: 800px;
+    max-width: 100%;
+    padding: 20px 0px 30px 0px;
+}
+
+
+/* THIRD SECTION */
+.thirdSection{
+    background-image: url("img/background/bg3.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.thirdContainer{
+    margin: 40px 0px;
+}
+.rum{
+    width: 200px;
+    max-width: 100%;
+    margin-top: 50px;
+    animation-iteration-count: infinite;
+}
+.rum1{
+    width: 200px;
+    max-width: 100%;
+    margin-top: 80px;
+    animation-iteration-count: infinite;
+}
+.snow{
+    width: 30px;
+    max-width: 100%;
+    animation-name: myanimation5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.snow1{
+    width: 50px;
+    max-width: 100%;
+    margin: 80px 0px 0px 40px;
+    animation-name: myanimation5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.snow2{
+    width: 40px;
+    max-width: 100%;
+    margin: -30px 40px 0px 0px;
+    animation-name: myanimation5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.snow3{
+    width: 60px;
+    max-width: 100%;
+    margin: 20px 0px 0px 0px;
+    animation-name: myanimation5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.animate__animated .animate__bounce{
+    animation-iteration-count: infinite;
+}
+.notification3first{
+    width: 50%;    
+    left: 25%;
+    top: 32%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.notification3second{
+    width: 50%;    
+    left: 25%;
+    top: 60%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.paddingTop{
+    padding-top: 60px;
+}
+.btnCta3{
+    font-size: 20px;
+    font-family: 'Gotham-Book';
+    color: #4C848D;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #E6E3E7;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom: none;
+    width: 200px;
+    margin-top:-120px;
+}
+
+
+/* FOURTH SECTION */
+.fourthSection{
+    background-image: url("img/background/bg4.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fourthContainer{
+    padding: 170px 20px;
+}
+.fire{
+    width: 80px;
+    animation-name: fire;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes fire {
+    0%   {
+        transform: scale(1);
+      }
+      50%  {
+        transform: scale(0.8);
+      }
+      100%  {
+        transform: scale(1);
+      }
+}
+.notification4{
+    width: 50%;    
+    left: 25%;
+    top: 40%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.paddingTopFire{
+    padding-top: 40px;
+}
+.noShow{
+    display: none;
+}
+
+
+
+/* FIFTH SECTION */
+.fifthSection{
+    background-image: url("img/background/bg5.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fifthContainer{
+    padding: 200px 20px;
+}
+.notification5{
+    width: 50%;    
+    left: 25%;
+    top: 15%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.airplane{
+    width: 500px;
+    max-width: 100%;
+}
+.hello{
+    width: 300px;
+    max-width: 100%;
+    animation-name: myanimation2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes myanimation2 {
+    0%   {
+      transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+    100% {
+      transform: rotate(0px);
+    }
+  }
+.hello1{
+    width: 300px;
+    max-width: 100%;
+    animation-name: myanimation3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes myanimation3 {
+    0%   {
+        transform: translateX(0px);
+      }
+      25%{
+          transform: translateX(-10px);
+      }
+      50%{
+          transform: translateX(-20px);
+      }
+      75%{
+          transform: translateX(-10px);
+      }
+      100% {
+        transform: rotate(0px);
+      }
+  }
+
+
+/* SIXTH SECTION */
+.sixthSection{
+    background-image: url("img/background/bg6.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sixthContainer {
+    padding: 150px 0px;
+}
+.imgAstronaut{
+    width: 600px;
+    padding: 10px 0px 0px 20px;
+    max-width: 100%;
+    z-index: 1;
+    animation-name: astronaut;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.imgAstronaut1{
+    width: 600px;
+    padding: 30px 20px 0px 80px;
+    margin-top: 60px;
+    max-width: 100%;
+    z-index: 1;
+    animation-name: astronaut1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes astronaut {
+    0%   {
+        transform: scale(0.8);
+      }
+      50%  {
+        transform: scale(1);
+      }
+      100%  {
+        transform: scale(0.8);
+      }
+}
+@keyframes astronaut1 {
+    0%   {
+        transform: translateX(30px) scale(1);
+    }
+    25%{
+        transform: translateX(60px) scale(0.9);
+    }
+    50% {
+        transform: translateX(70px) scale(1);
+    }
+    75%{
+        transform: translateX(50px) scale(0.9);
+    }
+    100%  {
+        transform: translateX(30px) scale(1);
+    }
+}
+.notification6{
+    width: 50%;    
+    left: 25%;
+    top: 25%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* SEVENTH SECTION */
+.seventhSection{
+    background-image: url("img/background/bg7.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seventhContainer {
+    padding: 100px 20px 160px 20px;
+}
+.coin {
+    width: 80px;
+}
+.coinEffect{
+    animation-name: coin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes coin {
+    0%   {
+      transform: rotateY(0deg);
+    }
+    25%  {
+      transform: rotateY(90deg);
+    }
+    50%  {
+      transform: rotateY(180deg);
+    }
+    75%  {
+      transform: rotateY(90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+.coinEffect1{
+    animation-name: coin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.notification7{
+    width: 50%;    
+    left: 25%;
+    top: 22%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* EIGHTH SECTION */
+.eighthSection{
+    background-image: url("img/background/bg8.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eighthContainer {
+    padding: 0px 20px 140px 20px;
+}
+.star{
+    width: 80px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-name: star;
+}
+@keyframes star {
+    0%   {
+        transform: scale(1);
+      }
+      50%  {
+        transform: scale(1.2);
+      }
+      100%  {
+        transform: scale(1);
+      }
+}
+.notification8{
+    width: 50%;    
+    left: 25%;
+    top: 37%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* NINTH SECTION */
+.ninthSection{
+    background-image: url("img/background/bg9.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ninthContainer {
+    padding: 50px 20px 30px 20px;
+}
+.flag {
+    width: 80px;
+    align-content: center;
+}
+.flagEffect{
+    animation-name: flag;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes flag {
+    0%   {
+        transform: scale(1);
+      }
+      50%  {
+        transform: scale(1.2);
+      }
+      100%  {
+        transform: scale(1);
+      }
+}
+.notification9{
+    width: 40%;    
+    left: 29%;
+    top: 27%;
+    right: 30%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 1001;
+}
+
+
+/* TENTH SECTION */
+.tenthSection{
+    background-image: url("img/background/bg10.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tenthContainer {
+    padding: 200px 0px 200px 0px;
+}
+.pizza {
+    width: 100px;
+    padding-top: 80px;
+    justify-self: center;
+}
+.burger {
+    width: 100px;
+    padding-top: 40px;
+    justify-self: center;
+}
+.chicken {
+    width: 100px;
+    padding-top: 40px;
+    justify-items: center;
+}
+.notification10{
+    width: 50%;    
+    left: 25%;
+    top: 25%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2; 
+}
+
+
+/* ELEVENTH SECTION */
+.eleventhSection{
+    background-image: url("img/background/bg11.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eleventhContainer {
+    padding: 190px 20px 150px 20px;
+}
+.foodTrends {
+    width: 50%;
+    padding: 20px 0px 10px 0px;
+}
+.foodTrendsText{
+    padding-top: 50px;
+}
+.eleventhTitle{
+    font-size: 25px;
+    font-family: 'depixelbreit';
+    color: white;
+    text-align: center;
+}
+.eleventhText{
+    font-size: 20px;
+    font-family: 'Gotham-Medium';
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.heart{
+    width: 80px;
+    padding-bottom: 40px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.heartDif{
+    width: 80px;
+    padding-bottom: 40px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.notification11{
+    width: 50%;    
+    left: 25%;
+    top: 17%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2; 
+}
+.topPadding{
+    padding-top: 200px;
+}
+
+
+/* TWELFTH SECTION */
+.twelfthSection{
+    background-image: url("img/background/bg12.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.twelfthContainer {
+    padding: 220px 0px;
+}
+.corn{
+    width: 400px;
+    padding: 10px 0px 0px 120px;
+    max-width: 100%;
+    z-index: 1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.corn1{
+    width: 500px;
+    padding: 30px 20px 0px 200px;
+    margin-top: 60px;
+    max-width: 100%;
+    z-index: 1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.notification12first{
+    width: 50%;    
+    left: 25%;
+    top: 20%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.notification12second{
+    width: 50%;    
+    left: 25%;
+    top: 47%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* THIRTEENTH SECTION */
+.thirteenthSection{
+    background-image: url("img/background/bg13.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.thirteenthContainer {
+    padding: 50px 0px 350px 0px;
+}
+.thirteenthText{
+    font-size: 30px;
+    font-family: 'depixelbreit';
+    color: #cb5b62;
+    text-align: center;
+    padding: 20px 0px;
+}
+.icecream{
+    width: 300px;
+    padding: 0px 0px 0px 60px;
+    margin-top: -100px;
+    max-width: 100%;
+    z-index: 1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.icecream1{
+    width: 500px;
+    padding: 0px 20px 0px 230px;
+    margin-top: 60px;
+    max-width: 100%;
+    z-index: 1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.notification13first{
+    width: 50%;    
+    left: 25%;
+    top: 19%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.notification13second{
+    width: 50%;    
+    left: 25%;
+    top: 60%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* FOURTEENTH SECTION */
+.fourteenthSection{
+    background-image: url("img/background/bg14.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fourteenthContainer{
+    padding: 50px 0px 70px 0px;
+}
+.fourteenthText{
+    font-size: 30px;
+    font-family: 'depixelbreit';
+    color: #8d8052;
+    text-align: center;
+    padding: 20px 0px;
+}
+.fourteenthTitle{
+    font-size: 35px;
+    font-family: 'depixelbreitfeet';
+    color: #8d8052;
+    text-align: center;
+    font-weight: bold;
+}
+.glasses{
+    width: 200px;    
+    margin-top: 150px; 
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+.books{
+    width: 250px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;    
+}
+.bananas{
+    width: 200px;
+    margin-right: 200px; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.notification14first{
+    width: 50%;    
+    left: 25%;
+    top: 20%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.notification14second{
+    width: 50%;    
+    left: 25%;
+    top: 52%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* FIFTEENTH SECTION */
+.fifteenthSection{
+    background-image: url("img/background/bg15.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fifteenthContainer{
+    padding: 50px 0px 170px 0px;
+}
+.fifteenthText{
+    font-size: 30px;
+    font-family: 'depixelbreit';
+    color: #fedfa0;
+    text-align: center;
+    padding: 20px 0px;
+}
+.fifteenthTitle{
+    font-size: 35px;
+    font-family: 'depixelbreitfeet';
+    color: #fedfa0;
+    text-align: center;
+    font-weight: bold;
+}
+.notification15{
+    width: 50%;
+    max-width: 100%;
+    left: 25%;
+    top: 20%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.cloth{
+    width: 400px;  
+    margin-right: 200px;  
+}
+.pot{
+    width: 400px;
+    margin-left: 0px;  
+    margin-top: 100px;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+.btnCta15{
+    font-size: 20px;
+    font-family: 'Gotham-Book';
+    color: #4C848D;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #E6E3E7;
+    border-bottom: none;
+    width: 250px;
+    margin: 0px 20px;
+}
+.btnCta15All{
+    margin: 100px 0px 0px 0px;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* SIXTEENTH SECTION */
+.sixteenthSection{
+    background-image: url("img/background/bg16.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sixteenthContainer{
+    padding: 80px 0px 200px 0px;
+}
+.sixteenthText{
+    font-size: 30px;
+    font-family: 'depixelbreit';
+    color: #fedfa0;
+    text-align: center;
+    padding: 20px 0px;
+}
+.sixteenthTitle{
+    font-size: 40px;
+    font-family: 'depixelbreitfeet';
+    color: #fedfa0;
+    text-align: center;
+    font-weight: bold;
+}
+.notification16{
+    width: 50%;
+    max-width: 100%;
+    left: 25%;
+    top: 25%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.glover{
+    width: 350px;  
+    padding: 0px 180px 0px 20px;  
+    margin-top: 50px;
+}
+.glover1{
+    width: 250px;
+    padding-right: 0px 70px;  
+    margin-top: -70px;
+    animation-name: myanimation5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes myanimation5 {
+    0%   {
+      transform: rotate(0deg);
+    }
+    25%   {
+        transform: rotate(90deg);
+      }
+    50%  {
+      transform: rotate(180deg);
+    }
+    100%  {
+      transform: rotate(360deg);
+    }
+  }
+.glover2{
+    width: 350px;  
+    padding-left: 170px;  
+    animation-name: myanimation4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes myanimation4 {
+    0%   {
+        transform: translateY(0px);
+      }
+      25%  {
+        transform: translateY(-70px);
+      }
+      50%  {
+        transform: translateY(30px);
+      }
+      25%  {
+        transform: translateY(70px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+  }
+.glovoCares{
+    width: 200px;
+    margin-top: 120px;
+}
+
+
+/* SEVENTEENTH SECTION */
+.seventeenthSection{
+    background-image: url("img/background/bg17.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seventeenthContainer{
+    padding: 100px 0px 510px 0px;
+}
+.seventeenthText{
+    font-size: 30px;
+    font-family: 'depixelbreit';
+    color: #E6E3E7;
+    text-align: center;
+    padding: 20px 0px;
+}
+.seventeenthTitle{
+    font-size: 40px;
+    font-family: 'depixelbreitfeet';
+    color: #E6E3E7;
+    text-align: center;
+    font-weight: bold;
+}
+.notification17{
+    width: 50%;
+    max-width: 100%;
+    left: 25%;
+    top: 25%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.cloud {
+    width: 100px;
+    max-width: 100%;
+    margin: 70px;
+}
+.cloud1{
+    width: 300px;
+    max-width: 100%;
+}
+
+
+/* EIGHTEENTH SECTION */
+.eighteenthSection{
+    background-color: #00A082;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eighteenthContainer{
+    padding: 80px 0px 60px 0px;
+}
+.eighteenthText{
+    font-size: 30px;
+    font-family: 'depixelbreit';
+    color: #E6E3E7;
+    text-align: center;
+    padding: 20px 0px;
+}
+.notification18{
+    width: 50%;
+    max-width: 100%;
+    left: 25%;
+    top: 25%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    z-index: 2;
+}
+.food1{
+    width: 250px;   
+    margin-top: -50px;
+    margin-left: 100px;
+}
+.food{
+    width: 250px;
+}
+
+
+/* NINETEENTH SECTION */
+.nineteenthSection{
+    background-image: url("img/background/bg19.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo1{
+    width: 400px;
+    max-width: 100%;
+    padding: 250px 0px 40px 0px;
+}
+.nineteenthTitle{
+    font-size: 40px;
+    font-family: 'Gotham-Book';
+    color:  #03A082;
+    text-align: center;
+    padding: 40px 320px 20px 320px;
+}
+.cloud2 {
+    width: 600px;
+    max-width: 100%;
+}
+.cloud3{
+    width: 300px;
+    max-width: 100%;
+    margin: 200px 30px 0px 0px;
+}
+.star1 {
+    width: 150px;
+    margin: 250px 0px 0px 60px;
+    padding-left: 100px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.star2 {
+    width: 150px;
+    padding: 50px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.btnCta19{
+    font-size: 20px;
+    font-family: 'Gotham-Book';
+    color: #4C848D;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #E6E3E7;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom: none;
+    margin: 40px 30px 180px 30px;
+    width: 250px;
+}
+
+
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 2561px) {
+    .logo{
+        width: 800px;
+        margin-top: 300px;
+    }
+    .scrollDown{
+        width: 300px;
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+    .arrow{
+        width: 50px;
+    }
+    .arrow1{
+        width: 50px;
+    }
+    .arrow2{
+        width: 50px;
+    }
+    .firstTitle{
+        font-size: 60px;
+        margin-top: 520px;
+        padding-bottom: 20px;
+    }
+    .secondTitle{
+        font-size: 100px;
+        margin: 100px 200px 100px 200px;
+    }
+    .balloon{
+        width: 300px;
+        max-width: 100%;
+    }
+    .balloon1{
+        width: 300px;
+    }
+    .thirdContainer{
+        margin: 100px 0px;
+        padding: 0px 0px 400px 0px;
+    }
+    .rum{
+        width: 300px;
+        margin-top: 50px;
+    }
+    .rum1{
+        width: 300px;
+        margin-top: 120px;
+        margin-left: 60px !important;
+    }
+    .snow{
+        width: 50px;
+        margin: 10px 0px 0px 100px;
+    }
+    .snow1{
+        width: 60px;
+        margin: 80px 0px 0px 40px;
+    }
+    .snow2{
+        width: 80px;
+        max-width: 100%;
+        margin: -30px 40px 0px 0px;
+    }
+    .snow3{
+        width: 40px;
+        max-width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    .notification3first{
+        width: 60%;
+        left:20%;
+        top: 33%;
+    }
+    .notification3second{
+        width: 60%;
+        left:20%;
+        top: 57%;
+    }
+    .notification4{
+        width: 60%;
+        left:20%;
+        top: 46%;
+    }
+    .notification5{
+        width: 60%;
+        left:20%;
+        top: 35%;
+    }
+    .notification6{  
+        width: 60%;
+        left:20%;
+    }
+    .notification7{   
+        width: 60%;
+        left:20%;
+        top: 35%;
+    }
+    .notification8{  
+        width: 60%;
+        left:20%;
+        top: 42%;
+    }
+    .notification9{  
+        width: 60%;
+        left:20%;
+        top: 37%;
+    }
+    .notification10{  
+        width: 60%;
+        left:20%;
+        top: 12%;
+    }
+    .notification11{
+        width: 60%;
+        left:20%;
+        top: 25%;
+    }
+    .notification12first{  
+        width: 60%;
+        left:20%;
+        top: 30%;
+    }
+    .notification12second{  
+        width: 60%;
+        left:20%;
+        top: 50%;
+    }
+    .notification13first{
+        width: 60%;
+        left:20%;
+        top: 30%;
+    }
+    .notification13second{
+        width: 60%;
+        left:20%;
+        top: 55%;
+    }
+    .notification14first{
+        width: 60%;
+        left:20%;
+        top: 28%;
+    }
+    .notification14second{
+        width: 60%;
+        left:20%;
+        top: 48%;
+    }
+    .notification15{
+        width: 60%;
+        left:20%;
+        top: 25%;
+    }
+    .notification16{
+        width: 60%;
+        left:20%;
+        top: 35%;
+    }
+    .notification17{
+        width: 60%;
+        left:20%;
+        top: 30%;
+    }
+    .notification18{
+        width: 60%;
+        left:20%;
+        top: 30%;
+    }
+    .btnCta3{
+        font-size: 40px;
+        width: 400px;
+        margin-top:-600px;
+    }
+    .fourthContainer{
+        padding: 400px 0px 360px 0px;
+    }
+    .fire{
+        width: 200px;
+    }
+    .paddingTopFire{
+        padding-top: 150px;
+    }
+    .fifthContainer{
+        padding: 370px 0px;
+    }
+    .airplane{
+        width: 800px;
+    }
+    .hello{
+        width: 500px;
+        margin: 60px 0px;
+    }
+    .hello1{
+        width: 500px;
+        margin: 60px 0px;
+    }
+    @keyframes myanimation2 {
+        0%   {
+          transform: translateX(0px);
+        }
+        25%{
+            transform: translateX(30px);
+        }
+        50%{
+            transform: translateX(70px);
+        }
+        75%{
+            transform: translateX(30px);
+        }
+        100% {
+          transform: rotate(0px);
+        }
+      }
+      @keyframes myanimation3 {
+        0%   {
+            transform: translateX(0px);
+          }
+          25%{
+              transform: translateX(-30px);
+          }
+          50%{
+              transform: translateX(-70px);
+          }
+          75%{
+              transform: translateX(-30px);
+          }
+          100% {
+            transform: rotate(0px);
+          }
+      }
+    .sixthContainer {
+        padding: 380px 0px;
+    }
+    .notification6 {
+        top: 30%;
+    }
+    .imgAstronaut{
+        width: 1200px;
+        padding: 0px;
+    }
+    .imgAstronaut1{
+        width: 1200px;
+        padding: 0px;
+        margin-top: 60px;
+    }
+    @keyframes astronaut1 {
+        0%   {
+            transform: translateX(30px) scale(1);
+        }
+        25%{
+            transform: translateX(80px) scale(0.9);
+        }
+        50% {
+            transform: translateX(120px) scale(1);
+        }
+        75%{
+            transform: translateX(80px) scale(0.9);
+        }
+        100%  {
+            transform: translateX(30px) scale(1);
+        }
+    }
+    .seventhContainer {
+        padding: 210px 0px 250px 0px;
+    }
+    .coin {
+        width: 200px;
+    }
+    .eighthContainer {
+        padding: 0px 0px 300px 0px;
+    }
+    .star{
+        width: 200px;
+    }
+    .ninthContainer {
+        padding: 100px 0px;
+    }
+    .flag {
+        width: 100px;
+        align-content: center;
+    }
+    .pizza {
+        width: 150px;
+        padding-top: 80px;
+    }
+    .burger {
+        width: 150px;
+        padding-top: 40px;
+    }
+    .chicken {
+        width: 150px;
+        padding-top: 40px;
+    }
+    .eleventhContainer {
+        padding: 380px 0px 230px 0px;
+    }
+    .foodTrends {
+        width: 50%;
+        padding: 20px 0px 10px 0px;
+    }
+    .foodTrendsText{
+        padding-top: 200px;
+    }
+    .heart{
+        width: 200px;
+        padding-bottom: 40px;
+    }
+    .heartDif{
+        width: 200px;
+        padding-bottom: 40px;
+    }
+    .twelfthContainer {
+        padding: 410px 0px;
+    }
+    .corn{
+        width: 600px;
+        padding: 10px 0px 0px 120px;
+    }
+    .corn1{
+        width: 650px;
+        padding: 30px 20px 0px 200px;
+        margin-top: 60px;
+    }
+    .thirteenthContainer {
+        padding: 160px 0px 500px 0px;
+    }
+    .icecream{
+        width: 500px;
+        padding: 200px 0px 0px 60px;
+        max-width: 100%;
+        z-index: 1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+    }
+    .icecream1{
+        width: 700px;
+        padding: 0px 20px 0px 230px;
+        margin-top: 200px;
+    }
+    .thirteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+    }
+    .heart1{
+        width: 150px;
+        padding-bottom: 200px;
+        margin-top: -200px;
+    }
+    .heart2{
+        width: 150px;
+        padding-bottom: 200px;
+        margin-top: -200px;
+    }
+    .fourteenthContainer{
+        padding: 150px 0px 350px 0px;
+    }
+    .fourteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .fourteenthTitle{
+        font-size: 45px;
+    }
+    .glasses{
+        width: 400px;    
+        margin-top: 150px; 
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+    }
+    .books{
+        width: 400px;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;    
+    }
+    .bananas{
+        width: 400px;
+        margin-right: 100px; 
+        margin-top: -200px;
+    }
+    .fifteenthContainer{
+        padding: 150px 0px 320px 0px;
+    }
+    .fifteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .fifteenthTitle{
+        font-size: 45px;
+    }
+    .notification15{
+        top: 35%;
+    }
+    .cloth{
+        width: 600px;  
+        margin-right: 200px;  
+    }
+    .pot{
+        width: 600px;
+        margin-left: 0px;  
+        margin-top: 200px;
+    }
+    .btnCta15{
+        font-size: 30px;
+        width: 400px;
+    }
+    .btnCta15All{
+        margin: 100px 0px 0px 0px;
+    }
+    .sixteenthContainer{
+        padding: 160px 0px 370px 0px;
+    }
+    .sixteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .sixteenthTitle{
+        font-size: 45px;
+    }
+    .glover{
+        width: 450px;  
+        padding: 0px 180px 0px 20px;  
+        margin-top: 50px;
+    }
+    .glover1{
+        width: 400px;
+        padding-right: 0px 70px;  
+        margin-top: -70px;
+      }
+    .glover2{
+        width: 500px;  
+    }
+    .glovoCares{
+        width: 400px;
+        margin-top: 0px;
+    }
+    .seventeenthContainer{
+        padding: 180px 0px 1000px 0px;
+    }
+    .seventeenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .seventeenthTitle{
+        font-size: 45px;
+    }
+    .cloud {
+        width: 400px;
+        max-width: 100%;
+        margin: 70px;
+    }
+    .cloud1{
+        width: 500px;
+    }
+    .eighteenthContainer{
+        padding: 150px 0px 40px 0px;
+    }
+    .eighteenthText{
+        font-size: 40px;
+        padding: 100px 0px 100px 0px;
+        line-height: 60px;
+    }
+    .food1{
+        width: 400px;   
+        margin-top: -50px;
+        margin-left: 100px;
+    }
+    .food{
+        width: 400px;
+    }
+    .logo1{
+        width: 800px;
+        padding: 500px 0px 40px 0px;
+    }
+    .nineteenthTitle{
+        font-size: 60px;
+        padding: 120px 220px 100px 220px;
+    }
+    .cloud2 {
+        width: 700px;
+    }
+    .cloud3{
+        width: 500px;
+        margin: 350px 30px 0px 0px;
+    }
+    .star1 {
+        width: 150px;
+        margin: 250px 0px 0px 60px;
+        padding-left: 100px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    .star2 {
+        width: 150px;
+        padding: 50px;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    .btnCta19{
+        font-size: 40px;
+        margin: 40px 30px 180px 30px;
+        width: 500px;
+    }
+}  
+
+@media screen and (min-width: 1680px) and (max-width: 2560px) {
+    .logo{
+        width: 700px;
+        margin-top: 220px;
+    }
+    .scrollDown{
+        width: 200px;
+        max-width: 100%;
+        padding-bottom: 40px;
+    }
+    .arrow{
+        width: 40px;
+    }
+    .arrow1{
+        width: 40px;
+    }
+    .arrow2{
+        width: 40px;
+    }
+    .firstTitle{
+        font-size: 40px;
+        margin-top: 470px;
+        padding-bottom: 20px;
+    }
+    .secondTitle{
+        font-size: 100px;
+        margin: 0px 200px 50px 200px;
+    }
+    .balloon{
+        width: 300px;
+        max-width: 100%;
+    }
+    .balloon1{
+        width: 300px;
+    }
+    .thirdContainer{
+        margin: 50px 0px;
+        padding: 0px 0px 400px 0px;
+    }
+    .rum{
+        width: 400px;
+        margin-top: 50px;
+    }
+    .rum1{
+        width: 350px;
+        margin-top: 120px;
+        margin-left: 60px !important;
+    }
+    .snow{
+        width: 50px;
+        margin: 10px 0px 0px 100px;
+    }
+    .snow1{
+        width: 60px;
+        margin: 80px 0px 0px 40px;
+    }
+    .snow2{
+        width: 80px;
+        max-width: 100%;
+        margin: -30px 40px 0px 0px;
+    }
+    .snow3{
+        width: 40px;
+        max-width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    .notification3first{
+        top: 40%;
+    }
+    .notification3second{
+        top: 57%;
+    }
+    .btnCta3{
+        font-size: 30px;
+        width: 400px;
+        margin-top:-400px;
+    }
+    .fourthContainer{
+        padding: 400px 0px 360px 0px;
+    }
+    .fire{
+        width: 150px;
+    }
+    .paddingTopFire{
+        padding-top: 100px;
+    }
+    .notification4{
+        top: 47%;
+    }
+    .fifthContainer{
+        padding: 370px 0px;
+    }
+    .notification5{
+        top: 30%;
+    }
+    .airplane{
+        width: 700px;
+        max-width: 100%;
+    }
+    .hello{
+        width: 400px;
+    }
+    .hello1{
+        width: 400px;
+    }
+    @keyframes myanimation2 {
+        0%   {
+          transform: translateX(0px);
+        }
+        25%{
+            transform: translateX(30px);
+        }
+        50%{
+            transform: translateX(70px);
+        }
+        75%{
+            transform: translateX(30px);
+        }
+        100% {
+          transform: rotate(0px);
+        }
+      }
+      @keyframes myanimation3 {
+        0%   {
+            transform: translateX(0px);
+          }
+          25%{
+              transform: translateX(-30px);
+          }
+          50%{
+              transform: translateX(-50px);
+          }
+          75%{
+              transform: translateX(-30px);
+          }
+          100% {
+            transform: rotate(0px);
+          }
+      }
+    .sixthContainer {
+        padding: 310px 0px;
+    }
+    .notification6 {
+    top: 30%;
+    }
+    .imgAstronaut{
+        width: 1000px;
+        padding: 10px 0px 0px 20px;
+    }
+    .imgAstronaut1{
+        width: 1000px;
+        padding: 0px 20px 0px 100px;
+        margin-top: 60px;
+    }
+    @keyframes astronaut1 {
+        0%   {
+            transform: translateX(30px) scale(1);
+        }
+        25%{
+            transform: translateX(80px) scale(0.9);
+        }
+        50% {
+            transform: translateX(120px) scale(1);
+        }
+        75%{
+            transform: translateX(80px) scale(0.9);
+        }
+        100%  {
+            transform: translateX(30px) scale(1);
+        }
+    }
+    .seventhContainer {
+        padding: 190px 0px 220px 0px;
+    }
+    .coin {
+        width: 100px;
+    }
+    .notification7{
+        top: 32%;
+    }
+    .eighthContainer {
+        padding: 30px 0px 270px 0px;
+    }
+    .star{
+        width: 100px;
+    }
+    .notification8{
+        top: 42%;
+    }
+    .ninthContainer {
+        padding: 100px 0px;
+    }
+    .flag {
+        width: 100px;
+        align-content: center;
+    }
+    .notification9{
+        top: 35%;
+    }
+    .pizza {
+        width: 150px;
+        padding-top: 80px;
+    }
+    .burger {
+        width: 150px;
+        padding-top: 40px;
+    }
+    .chicken {
+        width: 150px;
+        padding-top: 40px;
+    }
+    .eleventhContainer {
+        padding: 300px 0px 220px 0px;
+    }
+    .foodTrends {
+        width: 50%;
+        padding: 20px 0px 10px 0px;
+    }
+    .foodTrendsText{
+        padding-top: 120px;
+    }
+    .heart{
+        width: 150px;
+        padding-bottom: 40px;
+    }
+    .heartDif{
+        width: 150px;
+        padding-bottom: 40px;
+    }
+    .notification11{
+        width: 50%;    
+        left: 25%;
+        top: 25%;
+    }
+    .twelfthContainer {
+        padding: 300px 0px;
+    }
+    .corn{
+        width: 600px;
+        padding: 10px 0px 0px 120px;
+    }
+    .corn1{
+        width: 650px;
+        padding: 30px 20px 0px 200px;
+        margin-top: 60px;
+    }
+    .notification12first{
+        top: 30%;
+    }
+    .notification12second{
+        top: 47%;
+    }
+    .thirteenthContainer {
+        padding: 120px 0px 320px 0px;
+    }
+    .icecream{
+        width: 500px;
+        padding: 200px 0px 0px 60px;
+        max-width: 100%;
+        z-index: 1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+    }
+    .icecream1{
+        width: 700px;
+        padding: 0px 20px 0px 230px;
+        margin-top: 200px;
+    }
+    .notification13first{
+        top: 35%;
+    }
+    .notification13second{
+        top: 58%;
+    }
+    .thirteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+    }
+    .heart1{
+        width: 150px;
+        padding-bottom: 200px;
+        margin-top: -200px;
+    }
+    .heart2{
+        width: 150px;
+        padding-bottom: 200px;
+        margin-top: -200px;
+    }
+    .fourteenthContainer{
+        padding: 130px 0px 180px 0px;
+    }
+    .fourteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .fourteenthTitle{
+        font-size: 45px;
+    }
+    .glasses{
+        width: 400px;    
+        margin-top: 150px; 
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+    }
+    .books{
+        width: 400px;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;    
+    }
+    .bananas{
+        width: 300px;
+        margin-right: 100px; 
+        margin-top: -200px;
+    }
+    .notification14first{
+        top: 30%;
+    }
+    .notification14second{
+        top: 50%;
+    }
+    .fifteenthContainer{
+        padding: 100px 0px 200px 0px;
+    }
+    .fifteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .fifteenthTitle{
+        font-size: 45px;
+    }
+    .notification15{
+        top: 35%;
+    }
+    .cloth{
+        width: 600px;  
+        margin-right: 200px;  
+    }
+    .pot{
+        width: 600px;
+        margin-left: 0px;  
+        margin-top: 200px;
+    }
+    .btnCta15{
+        font-size: 30px;
+        width: 400px;
+    }
+    .btnCta15All{
+        margin: 100px 0px 0px 0px;
+    }
+    .sixteenthContainer{
+        padding: 160px 0px 330px 0px;
+    }
+    .sixteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .sixteenthTitle{
+        font-size: 45px;
+    }
+    .notification16{
+        top: 35%;
+    }
+    .glover{
+        width: 450px;  
+        padding: 0px 180px 0px 20px;  
+        margin-top: 50px;
+    }
+    .glover1{
+        width: 400px;
+        padding-right: 0px 70px;  
+        margin-top: -70px;
+      }
+    .glover2{
+        width: 500px;  
+    }
+    .glovoCares{
+        width: 400px;
+        margin-top: 0px;
+    }
+    .seventeenthContainer{
+        padding: 180px 0px 750px 0px;
+    }
+    .seventeenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .seventeenthTitle{
+        font-size: 45px;
+    }
+    .notification17{
+        top: 40%;
+    }
+    .cloud {
+        width: 400px;
+        max-width: 100%;
+        margin: 70px;
+    }
+    .cloud1{
+        width: 500px;
+    }
+    .eighteenthContainer{
+        padding: 150px 0px 200px 0px;
+    }
+    .eighteenthText{
+        font-size: 40px;
+        padding: 100px 0px 20px 0px;
+        line-height: 60px;
+    }
+    .notification18{
+        top: 30%;
+    }
+    .food1{
+        width: 400px;   
+        margin-top: -50px;
+        margin-left: 100px;
+    }
+    .food{
+        width: 400px;
+    }
+    .logo1{
+        width: 700px;
+        padding: 400px 0px 40px 0px;
+    }
+    .nineteenthTitle{
+        font-size: 60px;
+        padding: 120px 220px 100px 220px;
+    }
+    .cloud2 {
+        width: 700px;
+    }
+    .cloud3{
+        width: 500px;
+        margin: 250px 30px 0px 0px;
+    }
+    .star1 {
+        width: 150px;
+        margin: 250px 0px 0px 60px;
+        padding-left: 100px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    .star2 {
+        width: 150px;
+        padding: 50px;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    .btnCta19{
+        font-size: 30px;
+        margin: 40px 30px 180px 30px;
+        width: 400px;
+    }
+
+}  
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    .logo{
+        width: 400px;
+        padding: 0px 0px 110px 0px;
+    }
+    .firstTitle{
+        margin-top: 80px;
+    }
+    .balloon{
+        width: 200px;
+    }
+    .balloon1{
+        width: 200px;
+        padding-left: 0px;
+        top: 30%;
+    }
+    .secondTitle{
+        font-size: 60px;
+        padding: 100px 200px;
+        margin: 0px;
+    }
+    .thirdContainer{
+        padding: 0px;
+    }
+    .btnCta3{
+        font-size: 20px;
+        margin-top: -130px;
+    }
+    .fifthContainer{
+        padding: 200px 20px 100px 20px;
+    }
+    .airplane{
+        width: 400px;
+    }
+    .hello{
+        width: 200px;
+    }
+    .sixthContainer {
+        padding: 70px 0px;
+    }
+    .imgAstronaut{
+        width: 400px;
+    }
+    .imgAstronaut1{
+        width: 400px;
+    }
+    .seventhContainer {
+        padding: 0px 20px 200px 20px;
+    }
+    .eighthContainer {
+        padding: 20px 20px 80px 20px;
+    }
+    .tenthContainer {
+        padding: 100px 20px 100px 20px;
+    }
+    .notification10{
+        top: 25%;
+    }
+    .notification9{
+        top: 23%;
+    }
+    .pizza{
+        width: 90px;
+        padding-top: 30px;
+        margin-top: 60px;
+    }
+    .burger{
+        width: 90px;
+        padding-top: 30px;
+    }
+    .chicken{
+        width: 90px;
+        padding-top: 30px;
+    }
+    .eleventhContainer {
+        padding: 100px 20px 60px 20px;
+    }
+    .foodTrends {
+        width: 60%;
+        padding: 20px 0px 10px 0px;
+    }
+    .heart{
+        padding-bottom: 20px;
+    }
+    .heartDif{
+        padding-bottom: 20px;
+    }
+    .eleventhTitle{
+        font-size: 25px;
+    }
+    .eleventhText{
+        font-size: 15px;
+    }
+    .corn{
+        width: 300px;
+        padding: 10px 0px 0px 80px;
+    }
+    .corn1{
+        width: 350px;
+        padding: 20px 20px 0px 150px;
+        margin-top: 40px;
+    }
+    .thirteenthContainer {
+        padding: 30px 0px 200px 0px;
+    }
+    .icecream{
+        width: 200px;
+        padding: 100px 0px 0px 40px;
+    }
+    .icecream1{
+        width: 350px;
+        padding: 0px 10px 0px 180px;
+        margin-top: 30px;
+    }
+    .notification12first{  
+        top: 20%;
+    }
+    .notification12second{  
+        top: 49%;
+    }
+    .thirteenthText{
+        font-size: 25px;
+        padding: 10px 0px 20px 0px;
+    }
+    .notification13first{  
+        top: 13%;
+    }
+    .notification13second{  
+        top: 59%;
+    }
+    .fourteenthContainer{
+        padding: 40px 0px 40px 0px;
+    }
+    .fourteenthText{
+        font-size: 25px;
+        padding: 10px 0px 20px 0px;
+    }
+    .fourteenthTitle{
+        font-size: 30px;
+    }
+    .glasses{
+        width: 150px;    
+        margin-top: 100px; 
+    }
+    .books{
+        width: 150px;    
+    }
+    .bananas{
+        width: 150px;
+        margin-right: 100px; 
+    }
+    .notification14first{
+        top: 17%;
+    }
+    .notification14second{
+        top: 48%;
+    }
+    .fifteenthContainer{
+        padding: 40px 0px 60px 0px;
+    }
+    .fifteenthText{
+        font-size: 25px;
+        padding: 10px 0px 20px 0px;
+    }
+    .fifteenthTitle{
+        font-size: 30px;
+    }
+    .notification15{
+        top: 17%;
+    }
+    .btnCta15All{
+        margin: 50px 0px;
+    }
+    .cloth{
+        width: 250px;  
+        margin-right: 100px;  
+    }
+    .pot{
+        width: 300px;
+        margin-left: 120px;  
+        margin-top: 80px;
+    }
+    .sixteenthContainer{
+        padding: 60px 0px 120px 0px;
+    }
+    .sixteenthText{
+        font-size: 25px;
+        padding: 10px 0px 20px 0px;
+    }
+    .sixteenthTitle{
+        font-size: 30px;
+    }
+    .glovoCares{
+        width: 200px;
+        margin: 100px 0px 0px 0px;
+    }
+    .notification16{
+        top: 20%;
+    }
+    .glover{
+        width: 300px;  
+        padding: 0px 180px 0px 20px;  
+        margin-top: 50px;
+    }
+    .glover1{
+        width: 200px;
+        padding-right: 0px 70px;  
+        margin-top: -70px;
+    }
+    .glover2{
+        width: 300px;  
+        padding-left: 170px;  
+    }
+    .seventeenthText{
+        font-size: 25px;
+        padding: 10px 0px 20px 0px;
+    }
+    .seventeenthTitle{
+        font-size: 30px;
+    }
+    .seventeenthContainer{
+        padding: 40px 0px 300px 0px;
+    }
+    .notification17{
+        top: 25%;
+    }
+    .food1{
+        width: 200px;   
+        margin-top: -30px;
+        margin-left: 100px;
+    }
+    .food{
+        width: 200px;
+    }
+    .eighteenthText{
+        font-size: 25px;
+        padding: 10px 0px 20px 0px;
+    }
+    .nineteenthTitle{
+        padding: 40px 200px 20px 200px;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 979px) {
+    .logo{
+        width: 400px;
+        padding: 0px 0px 110px 0px;
+    }
+    .scrollDown{
+        width: 150px;
+        padding-bottom: 40px;
+    }
+    .arrow{
+        width: 15px;
+        padding-bottom: 0px;
+    }
+    .arrow1{
+        width: 15px;
+        padding-bottom: 0px;
+    }
+    .arrow2{
+        width: 15px;
+        padding-bottom: 0px;
+    }
+    .firstTitle{
+        margin-top: 80px;
+    }
+    .balloon{
+        width: 200px;
+    }
+    .balloon1{
+        width: 150px;
+        padding-left: 0px;
+        top: 30%;
+    }
+    .secondTitle{
+        font-size: 35px;
+        padding: 20px 250px;
+        margin: 0px;
+    }
+    .lookBack{
+        width: 600px;
+        padding: 20px 0px 50px 0px;
+    }
+    .thirdContainer{
+        padding: 20px 0px 60px 0px;
+    }
+    .rum{
+        width: 100px;
+        margin-top: 70px;
+    }
+    .rum1{
+        width: 100px;
+        margin-top: 100px;
+    }
+    .snow{
+        width: 20px;
+    }
+    .snow1{
+        width: 30px;
+        margin: 10px 0px 20px 10px;
+    }
+    .snow2{
+        width: 15px;
+        margin: 30px 0px 0px 10px;
+    }
+    .snow3{
+        width: 25px;
+        margin: 10px 0px 0px 10px;
+    }
+    .btnCta3{
+        width: 150px;
+        font-size: 15px;
+        margin-top: -100px;
+    }
+    .notification3first{
+        top: 30%;
+    }
+    .notification3second{
+        top: 60%;
+    }
+    .fourthContainer{
+        padding: 130px 20px;
+    }
+    .notification4{
+        top: 42%;
+    }
+    .fifthContainer{
+        padding: 100px 20px 110px 20px;
+    }
+    .airplane{
+        width: 200px;
+    }
+    .hello{
+        width: 150px;
+    }
+    .hello1{
+        width: 150px;
+    }
+    .sixthContainer {
+        padding: 45px 0px;
+    }
+    .imgAstronaut{
+        width: 350px;
+    }
+    .imgAstronaut1{
+        width: 350px;
+    }
+    .seventhContainer {
+        padding: 50px 20px;
+    }
+    .notification7{
+        top: 27%;
+    }
+    .notification9{
+        top: 25%;
+    }
+    .eighthContainer {
+        padding: 0px 20px 40px 20px;
+    }
+    .notification10{
+        top: 25%;
+    }
+    .tenthContainer {
+        padding: 100px 20px 100px 20px;
+    }
+    .moveLeft1{
+        margin-left: 40px !important;
+    }
+    .pizza{
+        width: 60px;
+        padding-top: 40px;
+    }
+    .burger{
+        width: 60px;
+        padding-top: 20px;
+    }
+    .chicken{
+        width: 60px;
+        padding-top: 20px;
+    }
+    .eleventhContainer {
+        padding: 100px 20px 40px 20px;
+    }
+    .foodTrends {
+        width: 60%;
+        padding: 10px 0px 10px 0px;
+    }
+    .eleventhTitle{
+        font-size: 15px;
+    }
+    .eleventhText{
+        font-size: 11px;
+    }
+    .heart{
+        width: 70px;
+        padding-bottom: 20px;
+    }
+    .heartDif{
+        width: 70px;
+        padding-bottom: 20px;
+    }
+    .twelfthContainer {
+        padding: 80px 0px;
+    }
+    .corn{
+        width: 200px;
+        padding: 10px 0px 0px 60px;
+    }
+    .corn1{
+        width: 300px;
+        padding: 30px 20px 0px 120px;
+        margin-top: 60px;
+    }
+    .notification12second{ 
+        top: 49%;
+    }
+    .thirteenthText{
+        font-size: 20px;
+        padding: 5px 0px 20px 0px;
+    }
+    .icecream{
+        width: 100px;
+        padding: 20px 0px 0px 0px;
+        margin: 30px 0px 0px 80px;
+    }
+    .icecream1{
+        width: 300px;
+        padding: 0px 20px 0px 150px;
+        margin: 60px 0px 0px 30px;
+    }
+    .notification13first{
+        top: 20%;
+    }
+    .notification13second{  
+        top: 63%;
+    }
+    .fourteenthContainer{
+        padding: 20px 0px;
+    }
+    .fourteenthText{
+        font-size: 20px;
+        padding: 5px 0px 20px 0px;
+    }
+    .fourteenthTitle{
+        font-size: 25px;
+    }
+    .glasses{
+        width: 150px;    
+        margin-top: 80px; 
+    }
+    .books{
+        width: 200px;    
+    }
+    .bananas{
+        width: 150px;
+        margin-right: 100px; 
+        margin-top: -60px;
+    }
+    .notification14first{
+        top: 15%;
+    }
+    .notification14second{  
+        top: 46%;
+    }
+    .fifteenthText{
+        font-size: 20px;
+        padding: 5px 0px 20px 0px;
+    }
+    .fifteenthTitle{
+        font-size: 25px;
+    }
+    .fifteenthContainer{
+        padding: 20px 0px 100px 0px;
+    }
+    .btnCta15{
+        font-size: 12px;
+        width: 150px;
+        margin: 0px 10px;
+    }
+    .btnCta15All{
+        margin: 80px 10px 60px 10px;
+    }
+    .cloth{
+        width: 200px;  
+        margin-right: 70px;  
+    }
+    .pot{
+        width: 200px;
+        margin-left: 90px;  
+        margin-top: 50px;
+    }
+    .sixteenthContainer{
+        padding: 40px 0px 60px 0px;
+    }
+    .sixteenthText{
+        font-size: 20px;
+        padding: 5px 0px 20px 0px;
+    }
+    .sixteenthTitle{
+        font-size: 25px;
+    }
+    .glovoCares{
+        width: 200px;
+        margin: 40px 0px 20px 0px;
+    }
+    .notification16{
+        top: 18%;
+    }
+    .glover{
+        width: 200px;  
+        padding: 0px 90px 0px 10px;  
+        margin-top: 25px;
+    }
+    .glover1{
+        width: 150px;
+        padding-right: 0px 35px;  
+        margin-top: -35px;
+    }
+    .glover2{
+        width: 300px;  
+        padding-left: 150px;  
+    }
+    .seventeenthContainer{
+        padding: 40px 0px 300px 0px;
+    }
+    .notification17{
+        top: 22%;
+    }
+    .seventeenthText{
+        font-size: 20px;
+        padding: 5px 0px 20px 0px;
+    }
+    .seventeenthTitle{
+        font-size: 25px;
+    }
+    .food1{
+        width: 150px;   
+        margin-top: -30px;
+        margin-left: 100px;
+    }
+    .food{
+        width: 150px;
+    }
+    .cloud {
+        width: 100px;
+        max-width: 100%;
+        margin: 35px;
+    }
+    .cloud1{
+        width: 300px;
+        max-width: 100%;
+    }
+    .eighteenthText{
+        font-size: 20px;
+        padding: 5px 0px 20px 0px;
+    }
+    .nineteenthTitle{
+        font-size: 30px;
+        padding: 40px 150px 20px 150px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 779px) {
+    .logo{
+        width: 400px;
+        padding: 0px 0px 110px 0px;
+    }
+    .firstTitle{
+        margin-top: 80px;
+    }
+    .balloon{
+        width: 200px;
+    }
+    .balloon1{
+        width: 150px;
+        padding-left: 0px;
+        top: 15%;
+    }
+    .secondTitle{
+        font-size: 40px;
+        padding: 0px 100px;
+        margin: 0px;
+    }
+    .lookBack{
+        width: 350px;
+        padding: 40px 0px 50px 0px;
+    }
+    .thirdContainer{
+        padding: 20px 0px 60px 0px;
+    }
+    .rum{
+        width: 100px;
+        margin-top: 70px;
+    }
+    .rum1{
+        width: 100px;
+        margin-top: 100px;
+    }
+    .snow{
+        width: 20px;
+    }
+    .snow1{
+        width: 30px;
+        margin: 5px 0px 20px 10px;
+    }
+    .snow2{
+        width: 15px;
+        margin: 15px 0px 0px 7px;
+    }
+    .snow3{
+        width: 25px;
+        margin: 5px 0px 0px 5px;
+    }
+    .notification3first{
+        top: 40%;
+    }
+    .notification3second{ 
+        top: 60%;
+    }
+    .btnCta3{
+        width: 100px;
+        font-size: 10px;
+        margin-top: -80px;
+    }
+    .fourthContainer{
+        padding: 60px 20px;
+    }
+    .notification4{
+        top: 40%;
+    }
+    .paddingTopFire{
+        padding-top: 20px;
+    }
+    .fifthContainer{
+        padding: 80px 20px 80px 20px;
+    }
+    .airplane{
+        width: 250px;
+    }
+    .hello{
+        width: 100px;
+    }
+    .hello1{
+        width: 100px;
+    }
+    .sixthContainer {
+        padding: 20px 0px;
+    }
+    .imgAstronaut{
+        width: 300px;
+        padding: 0px;
+    }
+    .imgAstronaut1{
+        width: 300px;
+        padding: 0px;
+    }
+    .seventhContainer {
+        padding: 30px 20px 80px 20px;
+    }
+    .eighthContainer {
+        padding: 0px 20px 40px 20px;
+    }
+    .notification9{  
+        top: 20%;
+    }
+    .tenthContainer {
+        padding: 70px 20px 70px 20px;
+    }
+    .notification10{  
+        top: 20%;
+    }
+    .moveLeft1{
+        margin-left: 40px !important;
+    }
+    .pizza{
+        width: 50px;
+        padding-top: 30px;
+    }
+    .burger{
+        width: 50px;
+        padding-top: 30px;
+    }
+    .chicken{
+        width: 50px;
+        padding-top: 30px;
+    }
+    .topPadding{
+        padding-top: 70px;
+    }
+    .eleventhContainer {
+        padding: 60px 20px 30px 20px;
+    }
+    .foodTrends {
+        width: 60%;
+        padding: 10px 0px 5px 0px;
+    }
+    .foodTrendsText {
+        padding-top: 30px;
+    }
+    .eleventhTitle{
+        font-size: 12px;
+    }
+    .eleventhText{
+        font-size: 8px;
+        padding: 0px;
+    }
+    .heart{
+        width: 50px;
+        padding-bottom: 20px;
+    }
+    .heartDif{
+        width: 50px;
+        padding-bottom: 20px;
+    }
+    .twelfthContainer {
+        padding: 85px 0px;
+    }
+    .corn{
+        width: 200px;
+        padding: 10px 0px 0px 60px;
+    }
+    .corn1{
+        width: 250px;
+        padding: 30px 20px 0px 120px;
+        margin-top: 60px;
+    }
+    .notification12second{  
+        top: 45%;
+    }
+    .thirteenthContainer{
+        padding: 80px 0px;
+    }
+    .thirteenthText{
+        font-size: 18px;
+        padding: 5px 0px 20px 0px;
+    }
+    .icecream{
+        width: 200px;
+        padding: 0px 0px 0px 40px;
+        margin-top: -20px;
+    }
+    .icecream1{
+        width: 200px;
+        padding: 0px 20px 0px 40px;
+        margin-top: 60px;
+    }
+    .heart1{
+        width: 40px;
+        margin-top: -50px;
+        padding-bottom: 50px;
+    }
+    .heart2{
+        width: 40px;
+        margin-top: -50px;
+        padding-bottom: 50px;
+    }
+    .notification13first{
+        top: 30%;
+    }
+    .notification13second{
+        top: 63%;
+    }
+    .fourteenthContainer{
+        padding: 40px 0px 100px 0px;
+    }
+    .fourteenthText{
+        font-size: 18px;
+        padding: 5px 0px 20px 0px;
+        line-height: 30px;
+    }
+    .fourteenthTitle{
+        font-size: 20px;
+    }
+    .glasses{
+        width: 100px;    
+        margin-top: 30px; 
+    }
+    .books{
+        width: 100px;    
+    }
+    .bananas{
+        width: 100px;
+        margin-right: 100px; 
+        margin-top: -60px;
+    }
+    .notification14first{
+        top: 30%;
+    }
+    .notification14second{
+        top: 58%;
+    }
+    .fifteenthContainer{
+        padding: 10px 0px 60px 0px;
+    }
+    .fifteenthText{
+        font-size: 18px;
+        padding: 5px 0px 20px 0px;
+        line-height: 30px;
+    }
+    .fifteenthTitle{
+        font-size: 20px;
+    }
+    .notification15{
+        top: 23%;
+    }
+    .btnCta15{
+        font-size: 10px;
+        width: 120px;
+        margin: 20px 10px;
+    }
+    .btnCta15All{
+        margin: 70px 0px 0px 0px;
+    }
+    .cloth{
+        width: 150px;  
+        margin-right: 70px;  
+    }
+    .pot{
+        width: 150px;
+        margin-left: 90px;  
+        margin-top: 50px;
+    }
+    .sixteenthContainer{
+        padding: 30px 0px 40px 0px;
+    }
+    .sixteenthText{
+        font-size: 18px;
+        padding: 5px 0px 20px 0px;
+        line-height: 30px;
+    }
+    .sixteenthTitle{
+        font-size: 20px;
+    }
+    .glovoCares{
+        width: 150px;
+        margin: 20px 0px;
+    }
+    .notification16{
+        top: 28%;
+    }
+    .glover{
+        width: 200px;  
+        padding: 0px 90px 0px 10px;  
+        margin-top: 25px;
+    }
+    .glover1{
+        width: 100px;
+        padding-right: 0px 35px;  
+        margin-top: -35px;
+    }
+    .glover2{
+        width: 230px;  
+        padding-left: 130px;  
+    }
+    .seventeenthContainer{
+        padding: 20px 0px 220px 0px;
+    }
+    .seventeenthText{
+        font-size: 18px;
+        padding: 5px 0px 20px 0px;
+        line-height: 30px;
+    }
+    .seventeenthTitle{
+        font-size: 20px;
+    }
+    .notification17{
+        top: 28%;
+    }
+    .food1{
+        width: 100px;   
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    .food{
+        width: 100px;
+    }
+    .cloud {
+        width: 100px;
+        max-width: 100%;
+        margin: 35px;
+    }
+    .cloud1{
+        width: 300px;
+        max-width: 100%;
+    }
+    .eighteenthText{
+        font-size: 18px;
+        padding: 5px 0px 20px 0px;
+        line-height: 30px;
+    }
+    .notification18{
+        top: 28%;
+    }
+    .nineteenthTitle{
+        font-size: 25px;
+        padding: 40px 130px 20px 130px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .section_container{
+        padding: 0px;
+        margin: 0px;
+    }
+    .section_container--1 {
+        padding: 0px;
+        margin: 0px;
+    }
+    .firstSection{
+        background-image: url("img/background/bg1mobile.jpg");
+    }
+    .secondSection{
+        background-image: url("img/background/bg2mobile.jpg");
+    }
+    .thirdSection{
+        background-image: url("img/background/bg3mobile.jpg");
+    }
+    .fourthSection{
+        background-image: url("img/background/bg4mobile.jpg");
+    }
+    .fifthSection{
+        background-image: url("img/background/bg5mobile.jpg");
+    }
+    .sixthSection{
+        background-image: url("img/background/bg6mobile.jpg");
+    }
+    .seventhSection{
+        background-image: url("img/background/bg7mobile.jpg");
+    }
+    .eighthSection{
+        background-image: url("img/background/bg8mobile.jpg");
+    }
+    .ninthSection{
+        background-image: url("img/background/bg9mobile.jpg");
+    }
+    .tenthSection{
+        background-image: url("img/background/bg10mobile.jpg");
+    }
+    .eleventhSection{
+        background-image: url("img/background/bg11mobile.jpg");
+    }
+    .twelfthSection{
+        background-image: url("img/background/bg12mobile.jpg");
+    }
+    .thirteenthSection{
+        background-image: url("img/background/bg13mobile.jpg");
+    }
+    .fourteenthSection{
+        background-image: url("img/background/bg14mobile.jpg");
+    }
+    .fifteenthSection{
+        background-image: url("img/background/bg15mobile.jpg");
+    }
+    .sixteenthSection{
+        background-image: url("img/background/bg16mobile.jpg");
+    }
+    .seventeenthSection{
+        background-image: url("img/background/bg17mobile.jpg");
+    }
+    .eighteenthSection{
+        background-image: url("img/background/bg18mobile.jpg");
+    }
+    .nineteenthSection{
+        background-image: url("img/background/bg19mobile.jpg");
+    }
+    .logo{
+        width: 250px;
+        padding: 30px 0px 10px 0px;
+        margin: 60px 0px;
+    }
+    .scrollDown{
+        width: 100px;
+        padding-bottom: 25px;
+    }
+    .arrow{
+        width: 10px;
+        padding-bottom: 0px;
+    }
+    .arrow1{
+        width: 10px;
+        padding-bottom: 0px;
+    }
+    .arrow2{
+        width: 10px;
+        padding-bottom: 0px;
+    }
+    .firstTitle{
+        margin-top: 150px;
+        font-size: 20px;
+    }
+    .balloon{
+        width: 100px;
+        margin-top: 20px;
+    }
+    .balloon1{
+        width: 150px;
+        max-width: 100%;
+        padding-left: 20px;
+        top: 10%;
+    }
+    .secondTitle{
+        font-size: 30px;
+        padding: 50px 20px 0px 20px;
+        margin: 120px 0px 40px 0px;
+    }
+    .lookBack{
+        width: 300px;
+        padding: 40px 0px 40px 0px;
+    }
+    .thirdContainer{
+        padding: 60px 0px;
+        margin: 0px;
+    }
+    .rum{
+        width: 80px;
+        margin-top:-500px;
+        margin-bottom: 300px;
+        margin-left: 10px;
+    }
+    .rum1{
+        width: 80px;
+        margin-top:200px;
+        margin-bottom: 100px;
+        padding-left: 5px;
+        margin-right: 10px !important;
+    }
+    .marginTop{
+        margin-top: 250px !important;
+    }
+    .snow{
+        width: 30px;
+        margin: 10px 0px 0px 0px;
+    }
+    .snow1{
+        width: 20px;
+        margin: 20px 0px 0px 10px;
+    }
+    .snow2{
+        width: 15px;
+        margin: 10px 0px 0px 7px;
+    }
+    .snow3{
+        width: 25px;
+        margin: 20px 0px 0px 3px;
+    }
+    .btnCta3{
+        width: 200px;
+        font-size: 20px;
+        margin-top: -80px;
+    }
+    .fourthContainer{
+        padding: 100px 0px;
+    }
+    .noShow{
+        display:flex;
+    }    
+    .coinEffect{
+        animation-name: coin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    @keyframes coin {
+        0%   {
+          transform: scale(0.8);
+        }
+        50%  {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0.8);
+        }
+      }
+    .coinEffect1{
+        animation-name: coin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+    }
+    .paddingTopFire{
+        padding-top: 20px;
+    }
+    .fifthContainer{
+        padding: 120px 0px 100px 0px;
+    }
+    .notification3first{
+        width: 100%;
+        left:0%;
+        top: 33%;
+    }
+    .notification3second{
+        width: 100%;
+        left:0%;
+        top: 70%;
+    }
+    .notification4{
+        width: 100%;
+        left:0%;
+        top: 45%;
+    }
+    .notification5{
+        width: 100%;
+        left:0%;
+        top: 35%;
+    }
+    .notification6{  
+        width: 100%;
+        left:0%;
+        top: 35%;
+    }
+    .notification7{   
+        width: 100%;
+        left:0%;
+        top: 35%;
+    }
+    .notification8{  
+        width: 100%;
+        left:0%;
+        top: 42%;
+    }
+    .notification9{  
+        top: 25%;
+        width: 100%;
+        left: 0%;
+    }
+    .notification10{  
+        width: 100%;
+        left:0%;
+        top: 20%;
+    }
+    .notification11{
+        width: 100%;
+        left:0%;
+    }
+    .notification12first{  
+        width: 100%;
+        left:0%;
+        right:0%;
+        top: 35%;
+    }
+    .notification12second{  
+        width: 100%;
+        left:0%;
+        top: 70%;
+    }
+    .notification13first{
+        width: 100%;
+        left: 0%;
+        top: 20%;
+    }
+    .notification13second{
+        width: 100%;
+        left:0%;
+        top: 60%;
+    }
+    .notification14first{
+        width: 100%;
+        left:0%;
+        top: 22%;
+    }
+    .notification14second{
+        width: 100%;
+        left:0%;
+        top: 55%;
+    }
+    .notification15{
+        width: 100%;
+        left:0%;
+        top: 40%;
+    }
+    .notification16{
+        width: 100%;
+        left:0%;
+        top: 35%;
+    }
+    .notification17{
+        width: 100%;
+        left:0%;
+        top: 35%;
+    }
+    .notification18{
+        width: 100%;
+        left:0%;
+        top: 20%;
+    }
+    .airplane{
+        width: 250px;
+    }
+    .hello{
+        width: 200px;
+        margin-top: 70px;
+    }
+    .hello1{
+        width: 200px;
+        margin-top: 110px;
+    }
+    .sixthContainer {
+        padding: 70px 0px;
+    }
+    .imgAstronaut{
+        width: 500px;
+        padding: 0px;
+        margin-left: 50px !important;
+    }
+    @keyframes astronaut {
+        0%   {
+            transform: scale(0.8) rotate(0deg);
+        }
+        25%{
+            transform: scale(0.8) rotate(60deg);
+        }
+        50% {
+            transform: scale(1) rotate(90deg);
+        }
+        75%{
+            transform: scale(0.8) rotate(60deg);
+        }
+        100%  {
+            transform: scale(0.8) rotate(0deg);
+        }
+    }
+    .imgAstronaut1{
+        width: 200px;
+        padding: 0px;
+        margin-top: 400px;
+    }
+    @keyframes astronaut1 {
+        0%   {
+            transform: translateX(0px);
+        }
+        25%{
+            transform: translateX(-100px);
+        }
+        50% {
+            transform: translateX(-130px);
+        }
+        75%{
+            transform: translateX(-100px);
+        }
+        100%  {
+            transform: translateX(0px);
+        }
+    }
+    .seventhContainer {
+        padding: 100px 0px 130px 0px;
+    }
+    .eighthContainer {
+        padding: 60px 0px 100px 0px;
+    }
+    .ninthContainer {
+        padding: 60px 0px 60px 0px;
+    }
+    .tenthContainer {
+        padding: 100px 0px 110px 0px;
+    }
+    .pizza{
+        width: 40px;
+        padding-top: 40px;
+        visibility: hidden;
+    }
+    .burger{
+        width: 40px;
+        padding-top: 15px;
+        visibility: hidden;
+    }
+    .chicken{
+        width: 40px;
+        padding-top: 15px;
+        visibility: hidden;
+    }
+    .topPadding{
+        padding-top: 30px;
+    }
+    .eleventhContainer {
+        padding: 180px 0px 0px 0px;
+    }
+    .foodTrends {
+        width: 60%;
+        padding: 10px 0px 5px 0px;
+    }
+    .foodContainer{
+        margin-left: 0px;
+    }
+    .foodTrendsText {
+        padding-top: 15px;
+    }
+    .eleventhTitle{
+        font-size: 12px;
+    }
+    .eleventhText{
+        font-size: 8px;
+        padding: 0px;
+    }
+    .heart{
+        width: 30px;
+        padding-bottom: 0px;
+        margin-top: 20px;
+    }
+    .heartDif{
+        width: 30px;
+        padding-bottom: 0px;
+        margin-top: 20px;
+    }
+    .twelfthContainer {
+        padding: 150px 0px 200px 0px;
+    }
+    .corn{
+        width: 400px;
+        padding: 10px 0px 0px 20px;
+        margin-top: -50px;
+    }
+    .corn1{
+        width: 400px;
+        padding: 10px 20px 0px 0px;
+        margin-top: 250px;
+    }
+    .thirteenthContainer{
+        padding: 30px 0px 150px 0px;
+    }
+    .thirteenthText{
+        font-size: 15px;
+        padding: 0px 20px 40px 20px;
+        line-height: 20px;
+    }
+    .icecream{
+        width: 300px;
+        padding: 0px 0px 0px 0px;
+        margin-top: -20px;
+    }
+    .icecream1{
+        width: 300px;
+        padding: 0px 0px 0px 0px;
+        margin-top: 250px;
+    }
+    .heart1{
+        width: 60px;
+        margin-top: -20px;
+        padding-bottom: 25px;
+    }
+    .heart2{
+        width: 60px;
+        margin-top: -20px;
+        padding-bottom: 25px;
+    }
+    .fourteenthContainer{
+        padding: 40px 0px 100px 0px;
+    }
+    .fourteenthText{
+        font-size: 15px;
+        padding: 0px 20px 20px 20px;
+        line-height: 20px;
+    }
+    .fourteenthTitle{
+        font-size: 15px;
+    }
+    .glasses{
+        width: 300px;    
+        margin-top: -10px; 
+    }
+    .books{
+        width: 300px;    
+        margin-top: 180px; 
+        margin-left: 120px !important;
+    }
+    .bananas{
+        width: 150px;
+        margin-right: 50px; 
+        margin-top: 150px;
+    }
+    .noEffect1{
+        animation-iteration-count:0;
+    }
+    .fifteenthContainer{
+        padding: 60px 0px 50px 0px;
+    }
+    .fifteenthText{
+        font-size: 15px;
+        padding: 0px 20px 20px 20px;
+        line-height: 20px;
+    }
+    .fifteenthTitle{
+        font-size: 15px;
+    }
+    .btnCta15{
+        width: 130px;
+        font-size: 11px;
+        margin: 120px 10px;
+    }
+    .btnCta15All{
+        margin: 200px 0px 0px 0px;
+    }
+    .cloth{
+        width: 300px;  
+        margin-right: 70px;  
+        margin-top: 20px;
+    }
+    .pot{
+        width: 300px;
+        margin-left: 0px;  
+        margin-top: 20px;
+    }
+    .sixteenthContainer{
+        padding: 40px 0px 0px 0px;
+    }
+    .sixteenthText{
+        font-size: 15px;
+        padding: 0px 20px 20px 20px;
+        line-height: 20px;
+    }
+    .sixteenthTitle{
+        font-size: 15px;
+    }
+    .glovoCares{
+        width: 200px;
+        margin: 50px 0px 10px 0px;
+    }
+    .glover{
+        width: 80px;  
+        padding: 0px 90px 0px 10px;  
+        margin-top: 0px;
+    }
+    .glover1{
+        width: 200px;
+        padding-right: 0px;  
+        margin-top: -10px;
+    }
+    .glover2{
+        width: 200px;  
+        padding-left: 130px;  
+        margin-top: 300px;
+    }
+    @keyframes myanimation4 {
+        0%   {
+            transform: translateX(0px);
+          }
+          25%  {
+            transform: translateX(-100px);
+          }
+          50%  {
+            transform: translateX(-200px);
+          }
+          25%  {
+            transform: translateX(-100px);
+          }
+          100% {
+            transform: translateX(0px);
+          }
+      }
+    .seventeenthContainer{
+        padding: 200px 0px 500px 0px;
+    }
+    .seventeenthText{
+        font-size: 15px;
+        padding: 0px 20px 20px 20px;
+        line-height: 20px;
+    }
+    .seventeenthTitle{
+        font-size: 15px;
+    }
+    .heartLast{
+        margin-top: -60px;
+        padding-bottom: 60px;
+    }
+    .food1{
+        width: 150px;   
+        margin-top: 200px;
+        margin-left: 0px;
+    }
+    .food{
+        width: 100px;
+        margin-top: 200px;
+    }
+    .cloud{
+        width: 100px;
+        margin: 35px;
+        margin-top: -20px;
+    }
+    .cloud1{
+        width: 300px;
+    }
+    .eighteenthContainer{
+        padding: 40px 0px 40px 0px;
+    }
+    .eighteenthText{
+        font-size: 15px;
+        padding: 0px 20px 20px 20px;
+    }
+    .nineteenthContainer{
+        padding: 100px 20px 100px 20px;
+    }
+    .nineteenthTitle{
+        font-size: 20px;
+        padding: 0px 20px 20px 20px;
+    }
+    .logo1{
+        width: 400px;
+        margin-top: 200px;
+        padding: 0px;
+    }
+    .cloud2 {
+        width: 200px;
+        margin-top: 40px;
+        z-index: 3;
+    }
+    .cloud3{
+        width: 400px;
+        margin-top: 80px;
+    }
+    .star1 {
+        width: 100px;
+        margin: 80px 0px 0px 60px;
+        padding-left: 0px;
+    }
+    .star2 {
+        width: 150px;
+        padding: 20px;
+    }
+    .btnCta19{
+        width: 250px;
+        font-size: 20px;
+        margin-top: 60px;
+    }
+}
